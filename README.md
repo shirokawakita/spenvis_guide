@@ -126,7 +126,7 @@ OutputページのRadiation sources and effectsセクションから**Trapped pr
 
 *Table 4: AP-8モデル設定*
 
-AP-8の出力は**flux**（cm$^{-2}$ s$^{-1}$ MeV$^{-1}$）であり、ミッション期間（秒）を掛けてfluenceに変換する必要がある。
+AP-8の出力は**flux**（cm⁻² s⁻¹ MeV⁻¹）であり、ミッション期間（秒）を掛けてfluenceに変換する必要がある。
 
 ### 3.2 AP-9（IRENE）モデル（推奨）
 
@@ -176,7 +176,7 @@ OutputページのSolar particle mission fluencesを選択する。
 
 *Fig. 8: ESP-PSYCHICモデル選択画面*
 
-ESP-PSYCHICの出力は直接**fluence**（cm$^{-2}$ MeV$^{-1}$）であり、AP-8/AP-9のようなfluxからの変換は不要である。
+ESP-PSYCHICの出力は直接**fluence**（cm⁻² MeV⁻¹）であり、AP-8/AP-9のようなfluxからの変換は不要である。
 
 **注意:** ISS軌道（410 km, 51.6°）では地磁気遮蔽の減衰率が0.0009（99.9%遮蔽）であり、太陽陽子線フルエンスは全エネルギーでゼロとなる。一方、GEOでは減衰率が0.994でほぼ全量が到達する。
 
@@ -190,17 +190,17 @@ ESP-PSYCHICの出力は直接**fluence**（cm$^{-2}$ MeV$^{-1}$）であり、AP
 
 | Model | Output unit | Conversion |
 |-------|-------------|------------|
-| AP-8 / AP-9 | Flux (cm$^{-2}$ s$^{-1}$ MeV$^{-1}$) | × mission seconds |
-| ESP-PSYCHIC | Fluence (cm$^{-2}$ MeV$^{-1}$) | No conversion needed |
+| AP-8 / AP-9 | Flux (cm⁻² s⁻¹ MeV⁻¹) | × mission seconds |
+| ESP-PSYCHIC | Fluence (cm⁻² MeV⁻¹) | No conversion needed |
 
 *Table 7: 単位の違いと変換*
 
 | Duration | Seconds |
 |----------|---------|
-| 0.5 years (180 days) | 1.556 × 10$^7$ |
-| 1 year | 3.156 × 10$^7$ |
-| 5 years | 1.578 × 10$^8$ |
-| 10 years | 3.156 × 10$^8$ |
+| 0.5 years (180 days) | 1.556 × 10⁷ |
+| 1 year | 3.156 × 10⁷ |
+| 5 years | 1.578 × 10⁸ |
+| 10 years | 3.156 × 10⁸ |
 
 *Table 8: ミッション期間の秒数変換*
 
@@ -208,7 +208,7 @@ ESP-PSYCHICの出力は直接**fluence**（cm$^{-2}$ MeV$^{-1}$）であり、AP
 
 Combined fluenceは、各エネルギー点でTrapped fluenceとSolar fluenceを足し算する。
 
-$$F_{combined}(E) = F_{trapped}(E) + F_{solar}(E)$$
+F<sub>combined</sub>(E) = F<sub>trapped</sub>(E) + F<sub>solar</sub>(E)
 
 TrappedのエネルギーグリッドがSolarと異なる場合は、対数線形補間でSolarのグリッドに合わせる。
 
